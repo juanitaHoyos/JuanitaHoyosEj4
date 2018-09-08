@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#006AAD"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="200dp"
+        android:textColor="#ffff"
+        android:id="@+id/lv_contactos"
+        >
+
+    </ListView>
+
+    <EditText
+        android:id="@+id/edt_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="31dp"
+        android:ems="10"
+        android:hint="nombre"
+        android:inputType="textPersonName"
+        android:textColor="#fff"
+        android:textColorHint="#cccc"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edt_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="22dp"
+        android:ems="10"
+        android:hint="numero"
+        android:inputType="phone"
+        android:textColor="#fff"
+        android:textColorHint="#cccc"
+        app:layout_constraintEnd_toStartOf="@+id/btn_add"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_name" />
+
+    <TextView
+        android:id="@+id/tv_f"
+        android:layout_width="0dp"
+        android:layout_height="28dp"
+        android:layout_marginEnd="262dp"
+        android:layout_marginTop="15dp"
+        android:text=" F"
+        android:textColor="#ffff"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/sw_genero"
+        app:layout_constraintTop_toBottomOf="@+id/edt_num" />
+
+
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginTop="1dp"
+        android:background="#005087"
+        android:text="+"
+        android:textColor="#00A052"
+        android:textSize="40dp"
+        app:layout_constraintBottom_toBottomOf="@+id/edt_num"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/edt_num"
+        app:layout_constraintTop_toTopOf="@+id/edt_name" />
+
+
+    <Switch
+        android:id="@+id/sw_genero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:text="M "
+        android:textColor="#fff"
+        android:checked="true"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_f"
+        app:layout_constraintEnd_toStartOf="@+id/tv_f"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+
+
+</android.support.constraint.ConstraintLayout>
