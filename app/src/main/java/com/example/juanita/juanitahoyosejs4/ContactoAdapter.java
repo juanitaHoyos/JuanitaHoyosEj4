@@ -58,7 +58,7 @@ public class ContactoAdapter extends BaseAdapter {
         ImageButton btn_eliminar= renglon.findViewById(R.id.btn_eliminar);
 
         tv_nombre.setText(contactos.get(position).getNombre());
-        tv_num.setText(contactos.get(position).getNumero());
+       // tv_num.setText(contactos.get(position).getNumero());
         String gener=contactos.get(position).getGenero();
 
         if(gener.equals("mujer")){
